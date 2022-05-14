@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffeb33;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.container .forms {
+  display: flex;
+  align-items: center;
+  width: 200%;
+}
+
+.container .form {
+  width: 50%;
+  transition: margin-left 0.5s ease;
+}
+
+.container .signup {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.container.active .login {
+  opacity: 0;
+  margin-left: -50%;
+  transition: margin-left 0.5s ease, opacity 0.2s ease;
+}
+.container.active .signup {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.input-container {
+  border: 1px solid #e5d32e;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.signup .input-container {
+  padding: 30px;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+}
+
+.login .input-field {
+  padding: 10px;
+}
+
+.signup .input-field label {
+  display: block;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.login .input-field + .input-field {
+  border-top: 1px solid #f2f2f2;
+}
+
+.input-field input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #404040;
+  transition: all 0.2s ease;
+}
+.input-field input::placeholder {
+  color: #bfbfbf;
+}
+
+.login .input-field input {
+  padding-left: 40px;
+}
+
+.signup .input-field input {
+  padding: 8px 0 2px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  color: #bfbfbf;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.input-field i.icon {
+  left: 0;
+}
+
+.input-field i.showHidePw {
+  right: 0;
+  cursor: pointer;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid #29211e;
+  border-radius: 3px;
+  background: #423630;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.form button:hover {
+  background: #594941;
+}
+.form button.disabled {
+  border: 1px solid #e5d32e;
+  background: #f6f6f6;
+  color: #acacac;
+  pointer-events: none;
+}
+
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.checkbox-text input {
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+  accent-color: #594941;
+}
+.checkbox-text label {
+  color: #7f7519;
+  font-size: 14px;
+}
+
+.form ul {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form li {
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+}
+.form li:last-child {
+  padding-left: 10px;
+  margin-left: 5px;
+  border-left: 1px solid #7f7519;
+}
+
+.form a {
+  color: #7f7519;
+  font-size: 14px;
+}
+
+.form p {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.signup a {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+}

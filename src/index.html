@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <form action="#">
+            <div class="input-container">
+              <div class="input-field">
+                <input
+                  id="loginId"
+                  type="email"
+                  placeholder="이메일"
+                  required
+                />
+                <i class="uil uil-envelope icon"></i>
+              </div>
+              <div class="input-field">
+                <input
+                  id="loginPw"
+                  type="password"
+                  class="password"
+                  placeholder="비밀번호"
+                  maxlength="20"
+                  autocomplete="off"
+                  required
+                />
+                <i class="uil uil-lock icon"></i>
+                <i class="uil uil-eye-slash showHidePw"></i>
+              </div>
+            </div>
+            <button type="submit" class="disabled" id="loginBtn">로그인</button>
+            <div class="checkbox-text">
+              <input type="checkbox" id="logCheck" checked />
+              <label for="logCheck">아이디 저장</label>
+            </div>
+          </form>
+          <ul>
+            <li><a href="#" class="signup-link">회원가입</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form signup">
+          <form action="#">
+            <div class="input-container">
+              <p>계정 정보를 입력해주세요</p>
+              <div class="input-field">
+                <label for="signupId">이메일</label>
+                <input
+                  type="email"
+                  id="signupId"
+                  placeholder="이메일"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label for="signupPw">비밀번호</label>
+                <input
+                  type="password"
+                  id="signupPw"
+                  class="password"
+                  placeholder="비밀번호"
+                  maxlength="20"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="password"
+                  placeholder="비밀번호 확인"
+                  maxlength="20"
+                  autocomplete="off"
+                  required
+                />
+                <i class="uil uil-eye-slash showHidePw"></i>
+              </div>
+              <div class="input-field">
+                <label for="nickname">닉네임</label>
+                <input
+                  type="text"
+                  id="nickname"
+                  placeholder="닉네임"
+                  maxlength="20"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit">가입 완료</button>
+          </form>
+          <a href="#" class="login-link">처음으로 돌아가기</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
